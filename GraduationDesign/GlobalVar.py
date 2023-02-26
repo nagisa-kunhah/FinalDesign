@@ -1,1 +1,0 @@
-path_to_ratings='./data/ratings.csv'
