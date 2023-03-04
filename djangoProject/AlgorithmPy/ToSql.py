@@ -1,13 +1,11 @@
+import pandas as pd
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Column, Integer, String
-from sqlalchemy.orm import sessionmaker
-from DatabaseAPI.LinkAPI import Link
-import pandas as pd
-from DatabaseAPI import MoviesAPI
+
 from DatabaseAPI import LinkAPI
-from AlgorithmPy.DatabaseAPI import MoviesAPI
 from DatabaseAPI import RatingAPI
+from DatabaseAPI.LinkAPI import Link
+from djangoProject.AlgorithmPy.DatabaseAPI import MoviesAPI
 
 # from DatabaseAPI.MoviesAPI import Movie, add
 
