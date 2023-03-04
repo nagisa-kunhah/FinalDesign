@@ -11,6 +11,7 @@
 import pandas as pd
 import numpy as np
 import GlobalVar
+import pickle
 
 print(GlobalVar.pathrating)
 #根据rating.csv得到协同过滤矩阵
