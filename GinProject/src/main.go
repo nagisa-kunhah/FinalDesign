@@ -1,13 +1,17 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"GinProject/src/Model"
+	"GinProject/src/Routers"
+	"fmt"
+	"github.com/gin-gonic/gin"
+)
 
 func main() {
 	r := gin.Default()
-	r.GET("/ping", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"message": "AAA",
-		})
-	})
+	Routers.UserRouterInit(r)
+	RecommendList := Model.RecommendRecord{}
+	Model.DB.First(&RecommendList)
+	fmt.Println(RecommendList)
 	r.Run() // 监听并在 0.0.0.0:8080 上启动服务
 }
