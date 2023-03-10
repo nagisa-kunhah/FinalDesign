@@ -5,7 +5,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from DatabaseAPI import LinkAPI
 from DatabaseAPI import RatingAPI
 from DatabaseAPI.LinkAPI import Link
-from djangoProject.AlgorithmPy.DatabaseAPI import MoviesAPI
+from djangoProject.djangoProject.AlgorithmPy.DatabaseAPI import MoviesAPI
 
 # from DatabaseAPI.MoviesAPI import Movie, add
 
