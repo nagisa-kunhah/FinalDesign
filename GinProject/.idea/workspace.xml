@@ -4,7 +4,35 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6d74d6c-ef9f-4b98-8356-59c8f07eb01c" name="Changes" comment="Changes" />
+    <list default="true" id="f6d74d6c-ef9f-4b98-8356-59c8f07eb01c" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/tmp/build-errors.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fore-end/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fore-end/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fore-end/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fore-end/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fore-end/jsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fore-end/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fore-end/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fore-end/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fore-end/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fore-end/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fore-end/src/assets/title.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fore-end/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fore-end/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fore-end/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fore-end/src/views/AboutView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fore-end/src/views/HomeView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fore-end/src/vue-awesome-swiper.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fore-end/vue.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fore-end/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routers/UserRouter.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routers/UserRouter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tmp/build-errors.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmp/build-errors.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tmp/main.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmp/main.exe" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,26 +60,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultGoTemplateProperty": "Go File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "configurable..is.expanded": "true",
-    "configurable.GoLibrariesConfigurable.is.expanded": "true",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "G:/FinalDesign/GinProject",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "settings.editor.selected.configurable": "com.goide.configuration.GoLibrariesConfigurableProvider"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;configurable..is.expanded&quot;: &quot;true&quot;,
+    &quot;configurable.GoLibrariesConfigurable.is.expanded&quot;: &quot;true&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/FinalDesign/GinProject&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.goide.configuration.GoLibrariesConfigurableProvider&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\FinalDesign\GinProject\src\test" />
