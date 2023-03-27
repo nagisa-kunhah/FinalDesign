@@ -5,33 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6d74d6c-ef9f-4b98-8356-59c8f07eb01c" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/tmp/build-errors.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fore-end/.browserslistrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fore-end/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fore-end/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fore-end/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fore-end/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fore-end/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fore-end/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fore-end/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fore-end/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fore-end/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fore-end/src/assets/title.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fore-end/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fore-end/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fore-end/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fore-end/src/views/AboutView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fore-end/src/views/HomeView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fore-end/src/vue-awesome-swiper.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fore-end/vue.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fore-end/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Routers/UserRouter.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routers/UserRouter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tmp/build-errors.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmp/build-errors.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tmp/main.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmp/main.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +61,14 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="gin_project" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gin_project" />
       <working_directory value="$PROJECT_DIR$" />
@@ -94,6 +76,15 @@
       <package value="GinProject" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/src/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="gin_project" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
       <method v="2" />
     </configuration>
     <recent_temporary>
