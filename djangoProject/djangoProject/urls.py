@@ -15,10 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
-from . import view
+from djangoProject import view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', view.test)
+    path('fresh/', view.fresh_recommend)
 ]

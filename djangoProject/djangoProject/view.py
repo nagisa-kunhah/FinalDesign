@@ -1,5 +1,7 @@
+from djangoProject import LFM
 from django.http import HttpResponse
 
 
-def test(request):
-    return HttpResponse("aaa")
+def fresh_recommend(request):
+    LFM.run_LFM()
+    return HttpResponse("ok")

@@ -1,16 +1,18 @@
 <template>
-  <HelloWorld></HelloWorld>
+  <router-view></router-view>
 </template>
 <script>
 
 import HelloWorld from "@/components/HelloWorld.vue";
+import VedioPlay from "@/components/VideoPlay.vue";
 
 export default {
   components: {
-    HelloWorld
+    HelloWorld,
+    VedioPlay,
+    // Test,
   },
   setup() {
-
   }
 };
 </script>

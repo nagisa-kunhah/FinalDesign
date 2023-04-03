@@ -28,5 +28,6 @@ func UserRouterInit(r *gin.Engine) {
 				"id": id,
 			})
 		})
+		UserRouter.POST("/get_recommend", Controller.UserController{}.GetRecommend)
 	}
 }
