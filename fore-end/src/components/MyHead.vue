@@ -1,13 +1,17 @@
 <template>
   <div id="title">
-    <div id="mine-header">
+    <div id="info">
+      <Navi></Navi>
     </div>
   </div>
 </template>
 
 <script>
+import Navi from "@/components/Navi.vue";
+
 export default {
-  name: "MyTitle"
+  name: "MyTitle",
+  components: {Navi}
 }
 </script>
 
@@ -20,5 +24,9 @@ export default {
   background-size: cover;
   height: 140px;
   justify-content: center;
+}
+#info{
+  width: 100%;
+  opacity: 70%;
 }
 </style>

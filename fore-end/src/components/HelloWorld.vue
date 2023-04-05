@@ -1,5 +1,5 @@
 <template>
-  <MyTitle></MyTitle>
+  <MyHead></MyHead>
   <div id="p1">
     <div id="my-swipper">
       <swiper
@@ -16,50 +16,51 @@
       disableOnInteraction: false
       }">
         <swiper-slide class="slide">
-          <div class="swiper-img">p1</div>
+          <div class="swiper-img">{{slide_recommend[0]}}</div>
         </swiper-slide>
         <swiper-slide class="slide">
-          <div class="swiper-img">p2</div>
+          <div class="swiper-img">{{slide_recommend[1]}}</div>
         </swiper-slide>
       </swiper>
     </div>
     <div id="p1-content-right">
-      <div class="movie-preview" @mouseenter="mouseenter(0)" @mouseleave="mouseleave(0)">
+      <div class="movie-preview" @mouseenter="mouseenter(0)" @mouseleave="mouseleave(0)" @click="img_jump(0)">
         <div class="screen" :style="{backgroundImage:'url('+imgs[0]+')'}">
         </div>
         <div class="info" :style="{top:top_value[0]}">
           <p class="movie-title" :title=titles[0]>{{titles[0]}}</p>
         </div>
       </div>
-      <div class="movie-preview" @mouseenter="mouseenter(1)" @mouseleave="mouseleave(1)">
+
+      <div class="movie-preview" @mouseenter="mouseenter(1)" @mouseleave="mouseleave(1)" @click="img_jump(1)">
         <div class="screen" :style="{backgroundImage:'url('+imgs[1]+')'}">
         </div>
         <div class="info" :style="{top:top_value[1]}">
           <p class="movie-title" :title=titles[1]>{{titles[1]}}</p>
         </div>
       </div>
-      <div class="movie-preview" @mouseenter="mouseenter(2)" @mouseleave="mouseleave(2)">
+      <div class="movie-preview" @mouseenter="mouseenter(2)" @mouseleave="mouseleave(2)" @click="img_jump(2)">
         <div class="screen" :style="{backgroundImage:'url('+imgs[2]+')'}">
         </div>
         <div class="info" :style="{top:top_value[2]}">
           <p class="movie-title" :title=titles[2]>{{titles[2]}}</p>
         </div>
       </div>
-        <div class="movie-preview" @mouseenter="mouseenter(3)" @mouseleave="mouseleave(3)">
+        <div class="movie-preview" @mouseenter="mouseenter(3)" @mouseleave="mouseleave(3)" @click="img_jump(3)">
           <div class="screen" :style="{backgroundImage:'url('+imgs[3]+')'}">
           </div>
             <div class="info" :style="{top:top_value[3]}">
               <p class="movie-title" :title=titles[3]>{{titles[3]}}</p>
             </div>
         </div>
-      <div class="movie-preview" @mouseenter="mouseenter(4)" @mouseleave="mouseleave(4)" @click="img_jump">
+      <div class="movie-preview" @mouseenter="mouseenter(4)" @mouseleave="mouseleave(4)" @click="img_jump(4)">
         <div class="screen" :style="{backgroundImage:'url('+imgs[4]+')'}">
         </div>
         <div class="info" :style="{top:top_value[4]}">
           <p class="movie-title" :title=titles[4]>{{titles[4]}}</p>
         </div>
       </div>
-      <div class="movie-preview" @mouseenter="mouseenter(5)" @mouseleave="mouseleave(5)">
+      <div class="movie-preview" @mouseenter="mouseenter(5)" @mouseleave="mouseleave(5)" @click="img_jump(5)">
         <div class="screen" :style="{backgroundImage:'url('+imgs[5]+')'}">
         </div>
         <div class="info" :style="{top:top_value[5]}">
@@ -71,12 +72,13 @@
 </template>
 
 <script>
-import {Swiper,SwiperSlide } from 'swiper/vue'
+import {Swiper,SwiperSlide} from 'swiper/vue'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import {Pagination} from "swiper";
 import axios, {isCancel, AxiosError, create} from "axios";
-import MyTitle from "@/components/MyTitle.vue";
+import MyHead from "@/components/MyHead.vue";
+import {useRouter} from "vue-router";
 export default {
   name: "HelloWorld",
   data(){
@@ -84,7 +86,8 @@ export default {
       top_value:new Array(6).fill('70%'),
       imgs:[],
       titles:[],
-      val:1
+      val:1,
+      slide_recommend:["占位","占位"]
     }
   },
   watch:{
@@ -100,7 +103,7 @@ export default {
     }
   },
   components: {
-    MyTitle,
+    MyHead,
     Swiper,
     SwiperSlide,
   },
@@ -108,9 +111,10 @@ export default {
     this.fresh_recommend()
   },
   methods:{
-    img_jump(event){
-      console.log("aaaaaa")
-      this.$router.push({ path: '/PlayVideo', query: { movieId:5 } })
+    img_jump(id){
+      console.log(id)
+      // console.log("aaaaaa")
+      this.$router.push({ name: 'VideoRating', query: { movieId:id,title:this.titles[id] } })
     },
     mouseenter:function (index){
       this.top_value[index]='20%'
@@ -189,7 +193,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
+  //background-color: red;
 }
 .info{
   height: 100%;

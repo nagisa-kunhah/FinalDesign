@@ -1,5 +1,4 @@
 <template>
-  <MyTitle></MyTitle>
   <div class="back-ground">
     <div class="show-ground">
       <div class="img-show">
@@ -13,51 +12,99 @@
           <div class="description">
             {{desciption}}
           </div>
+          <div class="rating">
+            <el-rate v-model="value" allow-half />
+            <el-button  @click="submit">提交评价</el-button>
+          </div>
         </div>
       </div>
     </div>
+    <el-button plain class="back-btn" @click="back">回到首页</el-button>
+    <div class="comment_place">
+      <div class="input_comment">
+        <el-input v-model="input_comment" placeholder="Please input" :size="'default'" type="textarea" rows="5" show-word-limit resize="none"/>
+      </div>
+      <div class="submit_comment">
+        <el-button id="submit-comment-button" type="primary" :size="'large'" @click="submit_comment">Primary</el-button>
+      </div>
+    </div>
   </div>
-  <div style="width: 20%;height: 30px">
-    <el-rate
-        v-model="value"
-        show-text>
-    </el-rate>
-  </div>
+<!--  <button @click="get_data"></button>-->
 </template>
 <script>
-import MyTitle from "@/components/MyTitle.vue";
+import axios, {isCancel, AxiosError, create} from "axios";
+import MyTitle from "@/components/MyHead.vue";
 export default {
   components: {MyTitle},
   data() {
     return {
+      input_comment:null,
       value:null,
-      title:"博人传 火影忍者新时代",
-      desciption:"简介：随着和平的到来而走向近代化的木叶隐村。高楼林立，巨大显示屏中播放出影像，连结各区域的电车在村里奔驰。虽说是忍者村，但一般民众也增多，忍者的生存方式也在逐渐改变的这个时代——村子的领袖、第七代火影·漩涡鸣人的儿子博人，进入了培育忍者的学校“忍者学校”。周围的学生们带着“火影的儿子”这样偏见的目光看待博人，但博人凭借天生的破天荒性格将这种小事轻松越过！博人与新的伙伴相遇，他将如何挑战突然发生的神秘事件？在众人心中如疾风般狂奔的“漩涡博人”的物语，现在开始！！"
+      title:"暂无，占位",
+      desciption:"暂无，占位"
     };
+  },
+  methods:{
+    submit_comment(){
+      axios.post('http://')
+    },
+    get_data(){
+      console.log('数据数据数据:',this.$route.params.title)
+    },
+    submit(){
+      console.log("提交评价")
+      ElNotification({
+        title: '评价提交成功',
+        message: h('i', { style: 'color: teal' }, '评价已提交'),
+      })
+    },
+    back(){
+      this.$router.push({ name: 'home'})
+    }
+  },
+  created(){
+    this.title=this.$route.query.title
   }
 };
-</script>
+import { h } from 'vue'
+import { ElNotification } from 'element-plus'
 
+const open1 = () => {
+  ElNotification({
+    title: '评价提交成功',
+    message: h('i', { style: 'color: teal' }, 'This is a reminder'),
+  })
+}
+
+const open2 = () => {
+  ElNotification({
+    title: 'Prompt',
+    message: 'This is a message that does not automatically close',
+    duration: 0,
+  })
+}
+</script>
 <style scoped>
 .back-ground{
-  display: flex;
-  justify-content: center;
-  align-content: center;
+  text-align: center;
   width: 100%;
+  min-width: 1080px;
 }
 .show-ground{
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 20px;
   display: flex;
   width: 90%;
   overflow: hidden;
   height: 400px;
-  background-color: yellow;
+  //background-color: yellow;
 }
 .img-show{
   height: 100%;
   width: 35%;
   min-width: 35%;
-  background-color: red;
+  //background-color: red;
 }
 .img{
   background-image: url("@/assets/photo/679.png");
@@ -65,24 +112,55 @@ export default {
   width: 190px;
   margin-top: 10%;
   margin-left: 40%;
-  background-color: green;
+  //background-color: green;
 }
 .description{
   padding: 20px;
   display: flex;
-  height: 80px;
   flex-wrap: wrap;
   word-break: break-all;
   word-wrap: break-word;
+  height: 200px;
 }
 .title{
   font-family: Microsoft Yahei,Tahoma,Helvetica,Arial,"\5B8B\4F53",sans-serif;
-  color: white;
+  height: 30%;
 }
 .info{
   padding: 20px;
   font-family: Microsoft Yahei,Tahoma,Helvetica,Arial,"\5B8B\4F53",sans-serif;
-  color: white;
+}
+.right{
+  display: flex;
+  width: 65%;
+  min-width: 65%;
+}
+.rating{
+ height: 90px;
+  margin-left: 20px;
+  width: 100%;
 }
 
+.comment_place{
+  display: flex;
+  width: 90%;
+  //background-color: green;
+  margin: 20px auto;
+}
+
+.back-btn{
+  margin-left: 0;
+}
+.input_comment{
+  min-width: 90%;
+}
+.submit_comment{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+#submit-comment-button{
+  margin-top: 40%;
+  margin-left:50%;
+}
 </style>

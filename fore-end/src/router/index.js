@@ -1,9 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import HelloWorld from "@/components/HelloWorld.vue";
-import VedioPlay from "@/components/VideoPlay.vue";
-import VideoRating from "@/components/VideoRating.vue";
-import VideoPlay from "@/components/VideoPlay.vue";
+import HelloWorld from '@/components/HelloWorld.vue'
+import VideoRating from '@/components/VideoRating.vue'
+import VideoPlay from '@/components/VideoPlay.vue'
+import Register from '@/components/Register.vue'
+import Login from "@/components/Login.vue";
 
 const routes = [
   {
@@ -28,6 +29,16 @@ const routes = [
     path:'/VideoRating',
     name:'VideoRating',
     component: VideoRating
+  },
+  {
+    path:'/Register',
+    name:'Register',
+    component: Register
+  },
+  {
+    path:'/Login',
+    name: 'Login',
+    component: Login
   }
 ]
 
