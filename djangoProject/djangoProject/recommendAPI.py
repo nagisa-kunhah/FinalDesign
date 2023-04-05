@@ -39,6 +39,3 @@ def select_all():
     res = session.query(RecommendRecord).all()
     return res
 
-
-if __name__ == '__main__':
-    print("work!!")
