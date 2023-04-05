@@ -5,269 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6d74d6c-ef9f-4b98-8356-59c8f07eb01c" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/MovieRecord.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fore-end/src/components/MyTitle.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fore-end/src/components/Test.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fore-end/src/components/VideoPlay.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fore-end/src/components/VideoRating.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/FinalDesign.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/FinalDesign.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/API/UserAPI.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/CommentRecord.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/User.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/CommentsModel_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/UserAPI_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../djangoProject/djangoProject/data/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../djangoProject/djangoProject/data/links.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../djangoProject/djangoProject/data/movieidlist.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../djangoProject/djangoProject/data/movies.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../djangoProject/djangoProject/data/offline_recommend_als.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../djangoProject/djangoProject/data/offline_recommend_svd.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../djangoProject/djangoProject/data/online_recommend.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../djangoProject/djangoProject/data/ratings.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../djangoProject/djangoProject/data/users.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fore-end/src/components/Login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fore-end/src/components/Navi.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fore-end/src/components/Register.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fore-end/src/vue-shim.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/UserController.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Core.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Core.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Routers/UserRouter.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routers/UserRouter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tmp/build-errors.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmp/build-errors.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tmp/main.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmp/main.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/build-errors.log" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/build-errors.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/.idea/AlgorithmPy.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/GlobalVar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/LFM.py" beforeDir="false" afterPath="$PROJECT_DIR$/../djangoProject/djangoProject/LFM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/LinkAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/../djangoProject/djangoProject/LinkAPI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/MoviesAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/../djangoProject/djangoProject/MoviesAPI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/RatingAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/../djangoProject/djangoProject/RatingAPI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/ToSql.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/a.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/data/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/data/links.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/data/movieidlist.pickle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/data/movies.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/data/offline_recommend_als.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/data/offline_recommend_svd.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/data/online_recommend.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/data/ratings.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/data/users.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/know_to_data.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/1408.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/1413.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/1419.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/1485.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/1493.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/1564.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/1630.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/1649.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/1654.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/1655.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/1656.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/1657.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/1659.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/1660.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/1983.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/1990.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/1991.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2139.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2202.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2208.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2209.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2210.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2212.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2279.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2309.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2329.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2331.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2332.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2337.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2339.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2482.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2484.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2498.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2545.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2568.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2609.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2794.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2797.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2800.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2835.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2932.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2956.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/2957.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/3112.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/3512.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/3589.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/3637.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/3830.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/3869.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4080.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4152.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4284.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4294.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4373.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4377.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4386.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4387.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4394.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4414.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4499.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4565.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4633.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4674.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4676.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4677.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4727.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4728.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4733.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4734.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4735.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4736.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4739.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4742.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4743.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4746.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4750.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4754.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4760.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4766.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4782.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4829.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4832.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4833.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4834.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4836.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4838.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4846.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4871.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4872.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4880.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4895.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4971.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4990.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4993.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/4996.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5031.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5032.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5033.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5034.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5035.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5044.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5056.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5096.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5106.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5134.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5135.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5136.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5151.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5155.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5157.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5159.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5185.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5189.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5191.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5195.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5196.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5199.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5201.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5203.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5204.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5207.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5216.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5217.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5220.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5244.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5249.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5251.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5297.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5298.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5398.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5402.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5405.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5406.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5407.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5408.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5409.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5411.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5412.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5414.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5416.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5417.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5418.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5419.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5421.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5423.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5426.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5427.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5428.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5431.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5432.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5435.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5436.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5437.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5439.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5754.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5761.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5770.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5803.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5812.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5821.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5824.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5837.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5864.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5866.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5889.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5930.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5957.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/5992.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/6019.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/6187.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/6243.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/6283.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/6355.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/6525.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/679.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/682.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/6863.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/6945.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/700.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/7005.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/702.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/7034.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/704.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/709.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/7098.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/710.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/7170.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/7210.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/722.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/730.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/737.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/7426.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/7457.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/7513.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/7520.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/7525.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/7705.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/7778.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/782.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/8170.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/8566.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/8652.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/8703.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/871.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/8802.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/9020.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/9444.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/9665.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/9666.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/photo/981.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/recommendAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/../djangoProject/djangoProject/recommendAPI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/try_get_img.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/try_get_img.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/try_get_img_1.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/try_get_img_2.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/AlgorithmPy/try_to_process_data.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../djangoProject/djangoProject/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../djangoProject/djangoProject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../djangoProject/djangoProject/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/../djangoProject/djangoProject/view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djangoProject/djangoProject/recommendAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/../djangoProject/djangoProject/recommendAPI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fore-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../fore-end/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fore-end/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../fore-end/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fore-end/src/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../fore-end/src/components/HelloWorld.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fore-end/src/components/MyTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../fore-end/src/components/MyHead.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fore-end/src/components/Test.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../fore-end/src/components/Test.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fore-end/src/components/VideoRating.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../fore-end/src/components/VideoRating.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fore-end/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../fore-end/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fore-end/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../fore-end/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fore-end/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../fore-end/yarn.lock" afterDir="false" />
@@ -325,15 +94,7 @@
       <recent name="G:\FinalDesign\GinProject\src" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
-      <module name="gin_project" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go 测试.GinProject/src/Test 中的 TestUserAPICheckLogin">
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gin_project" />
       <working_directory value="$PROJECT_DIR$" />
@@ -343,17 +104,47 @@
       <filePath value="$PROJECT_DIR$/src/main.go" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+    <configuration name="GinProject/src/Test 中的 TestComment" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="gin_project" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="DIRECTORY" />
+      <working_directory value="$PROJECT_DIR$/src/Test" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="GinProject/src/Test" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
+      <pattern value="^\QTestComment\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="GinProject/src/Test 中的 TestUserAPICheckLogin" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="gin_project" />
+      <working_directory value="$PROJECT_DIR$/src/Test" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="GinProject/src/Test" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestUserAPICheckLogin\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="GinProject/src/Test 中的 TestUserAPIInsert" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="gin_project" />
+      <working_directory value="$PROJECT_DIR$/src/Test" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="GinProject/src/Test" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestUserAPIInsert\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go 测试.GinProject/src/Test 中的 TestUserAPICheckLogin" />
+        <item itemvalue="Go 测试.GinProject/src/Test 中的 TestUserAPIInsert" />
+        <item itemvalue="Go 测试.GinProject/src/Test 中的 TestComment" />
         <item itemvalue="Go 构建.go build main.go" />
       </list>
     </recent_temporary>
@@ -380,5 +171,16 @@
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/Test/UserAPI_test.go</url>
+          <line>21</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

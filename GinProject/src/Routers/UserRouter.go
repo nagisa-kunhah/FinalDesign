@@ -29,5 +29,8 @@ func UserRouterInit(r *gin.Engine) {
 			})
 		})
 		UserRouter.POST("/get_recommend", Controller.UserController{}.GetRecommend)
+		UserRouter.POST("/sent_comment", Controller.UserController{}.ReceiveComment)
+		UserRouter.POST("/Register", Controller.UserController{}.Register)
+		UserRouter.POST("/Login", Controller.UserController{}.Login)
 	}
 }
