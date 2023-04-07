@@ -76,8 +76,8 @@ import {Swiper,SwiperSlide} from 'swiper/vue'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import {Pagination} from "swiper";
-import axiosfrom "axios";
 import MyHead from "@/components/MyHead.vue";
+import axios from "axios";
 export default {
   name: "HelloWorld",
   data(){
@@ -91,7 +91,7 @@ export default {
     }
   },
   watch:{
-    imgs(newimgs,oldimgs){
+    imgs(){
       this.fresh_recommend()
     }
   },
@@ -121,9 +121,6 @@ export default {
     },
     mouseleave:function (index){
       this.top_value[index]='70%'
-    },
-    set_cookie(event){
-      this.$cookie.set("id",'2', {expire:1,domain:'localhost',sameSite:'Lax'})
     },
     fresh_recommend(){
       let data={
@@ -181,15 +178,6 @@ li {
   margin: 0 10px;
 }
 
-#title{
-  display: flex;
-  background-image: url("~@/assets/title.jpg");
-  background-repeat: no-repeat;
-  background-position: center 0;
-  background-size: cover;
-  height: 140px;
-  justify-content: center;
-}
 .swiper-img{
   width: 100%;
   height: 300px;
