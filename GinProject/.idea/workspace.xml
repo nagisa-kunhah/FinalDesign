@@ -5,41 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6d74d6c-ef9f-4b98-8356-59c8f07eb01c" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/src/API/CommentAPI.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/TestController.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Routers/TestRouter.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test/CommentAPI_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test/JWT_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Util/JWT.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Util/JWTAPI.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../djangoProject/djangoProject/data/look_data.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fore-end/src/assets/identicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fore-end/src/components/CommentItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fore-end/src/components/UserCenter.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/UserAPI.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/UserAPI.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/UserController.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/CommentRecord.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/CommentRecord.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Routers/UserRouter.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routers/UserRouter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/MyTest.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/UserAPI_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/UserAPI_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tmp/build-errors.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmp/build-errors.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tmp/main.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmp/main.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/build-errors.log" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/build-errors.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fore-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../fore-end/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fore-end/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../fore-end/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fore-end/src/components/CommentItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../fore-end/src/components/CommentItem.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fore-end/src/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../fore-end/src/components/HelloWorld.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fore-end/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../fore-end/src/components/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fore-end/src/components/Navi.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../fore-end/src/components/Navi.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fore-end/src/components/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../fore-end/src/components/Register.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fore-end/src/components/Test.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../fore-end/src/components/Test.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fore-end/src/components/VideoRating.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../fore-end/src/components/VideoRating.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fore-end/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../fore-end/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fore-end/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../fore-end/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fore-end/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../fore-end/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

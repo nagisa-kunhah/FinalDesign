@@ -76,9 +76,8 @@ import {Swiper,SwiperSlide} from 'swiper/vue'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import {Pagination} from "swiper";
-import axios, {isCancel, AxiosError, create} from "axios";
+import axiosfrom "axios";
 import MyHead from "@/components/MyHead.vue";
-import {useRouter} from "vue-router";
 export default {
   name: "HelloWorld",
   data(){
@@ -87,7 +86,8 @@ export default {
       imgs:[],
       titles:[],
       val:1,
-      slide_recommend:["占位","占位"]
+      slide_recommend:["占位","占位"],
+      movie_id:[]
     }
   },
   watch:{
@@ -114,7 +114,7 @@ export default {
     img_jump(id){
       console.log(id)
       // console.log("aaaaaa")
-      this.$router.push({ name: 'VideoRating', query: { movie_id:id,title:this.titles[id] } })
+      this.$router.push({ name: 'VideoRating', query: { movie_id:this.movie_id[id],title:this.titles[id] } })
     },
     mouseenter:function (index){
       this.top_value[index]='20%'
@@ -129,10 +129,13 @@ export default {
       let data={
         id:1
       }
-      console.log("to get...")
       axios.post("http://localhost:8087/user/get_recommend",data).then((res)=>{
         let recommends=res.data.recommend
+        this.movie_id=[]
+        this.titles=[]
+        console.log("recommend:",res.data)
         for(let i=0;i<recommends.length;i++){
+          this.movie_id.push(recommends[i])
           let file_name='@/assets/photo/'+recommends[i]+'.jpg'
           try{
             let required=require(file_name)

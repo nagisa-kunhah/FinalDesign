@@ -10,7 +10,8 @@ import axios from "axios";
 const app=createApp(App)
 app.use(ElementPlus)
 app.use(router)
-localStorage.setItem("aaa","333")
 
 app.config.globalProperties.$cookie=VueCookie
+app.config.globalProperties.$axios = axios
+axios.defaults.baseURL = '/api'
 app.mount('#app')

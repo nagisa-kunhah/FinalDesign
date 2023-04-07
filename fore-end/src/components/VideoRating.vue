@@ -30,14 +30,14 @@
         </div>
       </div>
       <div v-for="item in comment_list" style="width: 100%">
-        <CommentItem :info="item" style="width: 100%"></CommentItem>
+        <CommentItem :info="item" style="{width: 100%;margin-top: 20px;}"></CommentItem>
       </div>
     </div>
   </div>
   <button @click="fresh_comment" style="{width: 20px;height: 20px;}">???</button>
 </template>
 <script>
-import axios, {isCancel, AxiosError, create} from "axios";
+import axios from "axios";
 import MyTitle from "@/components/MyHead.vue";
 export default {
   components: {CommentItem, UComment, MyTitle},
@@ -52,27 +52,45 @@ export default {
     };
   },
   methods:{
-    submit_comment(){
-      let data={
-        "belong_movie_id":this.movie_id,
-        "user_id":this.$root.user_id,
-        "comment":this.input_comment,
+    async submit_comment() {
+      let date1 = {
+        "txt": this.input_comment,
+        "skipBidi": false,
       }
-      axios.post('http://localhost:8087/user/SendComment',data).then((res)=>{
-        console.log(res.data.response)
-        if(res.data.response===true){
-          ElNotification({
-            title: '评论发表成功',
-            message: h('i', { style: 'color: teal' }, '评论发表成功'),
-          })
-        }
-        else{
+      let check=true
+      await this.$axios.post('/api/json-filter',date1).then((res) => {
+        console.log(res)
+        if (res.data.riskLevel !== "PASS") {
+          check=false
           ElNotification({
             title: '评论发表失败',
-            message: h('i', { style: 'color: teal' }, '评论发表失败'),
+            message: h('i', {style: 'color: teal'}, '评论发表失败'),
           })
         }
       })
+      if(!check){
+        return
+      }
+      let data = {
+        "belong_movie_id": this.movie_id,
+        "user_id": this.$root.user_id,
+        "comment": this.input_comment,
+      }
+      await axios.post('http://localhost:8087/user/SendComment', data).then((res) => {
+        console.log(res.data.response)
+        if (res.data.response === true) {
+          ElNotification({
+            title: '评论发表成功',
+            message: h('i', {style: 'color: teal'}, '评论发表成功'),
+          })
+        } else {
+          ElNotification({
+            title: '评论发表失败',
+            message: h('i', {style: 'color: teal'}, '评论发表失败'),
+          })
+        }
+      })
+      this.fresh_comment()
     },
     submit(){
       console.log("提交评价")
@@ -82,14 +100,15 @@ export default {
       })
     },
     async fresh_comment() {
+      this.comment_list=JSON.parse("[]")
       // console.log(this.comment_list[0]["CommentId"])
       let data = {
         "belong_movie_id": this.movie_id,
       }
       await axios.post('http://localhost:8087/user/SelectComment', data).then((res) => {
-        console.log(this.comment_list)
-        this.comment_list.push(res.data.content[0])
-        console.log(this.comment_list)
+        for(let i=0; i<res.data.content.length; i++){
+          this.comment_list.push(res.data.content[i])
+        }
       })
     },
   },
@@ -187,9 +206,6 @@ const open2 = () => {
   margin: 20px auto;
 }
 
-.back-btn{
-  margin-left: 0;
-}
 .input_comment{
   min-width: 90%;
 }
@@ -205,9 +221,5 @@ const open2 = () => {
 .write-comment{
   display: flex;
   width: 100%;
-}
-.box{
-  display: flex;
-  height: 100%;
 }
 </style>

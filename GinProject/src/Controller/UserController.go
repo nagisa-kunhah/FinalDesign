@@ -91,6 +91,7 @@ func (con UserController) SelectComment(context *gin.Context) {
 	belongMovieId, _ := strconv.Atoi(fmt.Sprint(json["belong_movie_id"]))
 	fmt.Println(belongMovieId)
 	ret := API.CommentAPI{}.FindAllCommentOfOneMovie(belongMovieId)
+	fmt.Println(len(ret))
 	context.JSON(http.StatusOK, gin.H{
 		"response": true,
 		"content":  ret,
