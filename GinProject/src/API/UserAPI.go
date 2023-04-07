@@ -16,9 +16,16 @@ func (api UserAPI) Insert(data Model.User) bool {
 	return true
 }
 
-func (api UserAPI) CheckLogin(email string, password string) bool {
+func (api UserAPI) CheckLogin(email string, password string) []Model.User {
 	var result []Model.User
 	Model.DB.Debug().Where("email=? AND password=?", email, password).Find(&result)
 	fmt.Println(result)
-	return len(result) != 0
+	return result
+}
+
+func (api UserAPI) GetInfo(UserId int) []Model.User {
+	var result []Model.User
+	Model.DB.Where("user_id=?", UserId).Find(&result)
+	fmt.Println(result)
+	return result
 }

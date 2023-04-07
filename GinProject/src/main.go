@@ -10,5 +10,6 @@ func main() {
 	r := gin.Default()
 	r.Use(cors.Default())
 	Routers.UserRouterInit(r)
+	Routers.TestRouterInit(r)
 	r.Run(":8087")
 }

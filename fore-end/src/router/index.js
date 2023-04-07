@@ -5,6 +5,9 @@ import VideoRating from '@/components/VideoRating.vue'
 import VideoPlay from '@/components/VideoPlay.vue'
 import Register from '@/components/Register.vue'
 import Login from "@/components/Login.vue";
+import CommentItem from "@/components/CommentItem.vue";
+import Test from "@/components/Test.vue";
+
 
 const routes = [
   {
@@ -39,6 +42,16 @@ const routes = [
     path:'/Login',
     name: 'Login',
     component: Login
+  },
+  {
+    path: '/CommentItem',
+    name:'CommentItem',
+    component:CommentItem,
+  },
+  {
+    path: '/test',
+    name: 'test',
+    component: Test,
   }
 ]
 

@@ -1,4 +1,5 @@
 <template>
+<!--  <MyTitle></MyTitle>-->
   <div class="back-ground">
     <div class="show-ground">
       <div class="img-show">
@@ -19,37 +20,59 @@
         </div>
       </div>
     </div>
-    <el-button plain class="back-btn" @click="back">回到首页</el-button>
     <div class="comment_place">
-      <div class="input_comment">
-        <el-input v-model="input_comment" placeholder="Please input" :size="'default'" type="textarea" rows="5" show-word-limit resize="none"/>
+      <div class="write-comment">
+        <div class="input_comment">
+          <el-input v-model="input_comment" placeholder="Please input" :size="'default'" type="textarea" rows="5" show-word-limit resize="none"/>
+        </div>
+        <div class="submit_comment">
+          <el-button id="submit-comment-button" type="primary" :size="'large'" @click="submit_comment">发表评论</el-button>
+        </div>
       </div>
-      <div class="submit_comment">
-        <el-button id="submit-comment-button" type="primary" :size="'large'" @click="submit_comment">Primary</el-button>
+      <div v-for="item in comment_list" style="width: 100%">
+        <CommentItem :info="item" style="width: 100%"></CommentItem>
       </div>
     </div>
   </div>
-<!--  <button @click="get_data"></button>-->
+  <button @click="fresh_comment" style="{width: 20px;height: 20px;}">???</button>
 </template>
 <script>
 import axios, {isCancel, AxiosError, create} from "axios";
 import MyTitle from "@/components/MyHead.vue";
 export default {
-  components: {MyTitle},
+  components: {CommentItem, UComment, MyTitle},
   data() {
     return {
-      input_comment:null,
-      value:null,
+      movie_id: null,
+      input_comment: null,
+      value: null,
       title:"暂无，占位",
-      desciption:"暂无，占位"
+      desciption:"暂无，占位",
+      comment_list:JSON.parse("[]")
     };
   },
   methods:{
     submit_comment(){
-      axios.post('http://')
-    },
-    get_data(){
-      console.log('数据数据数据:',this.$route.params.title)
+      let data={
+        "belong_movie_id":this.movie_id,
+        "user_id":this.$root.user_id,
+        "comment":this.input_comment,
+      }
+      axios.post('http://localhost:8087/user/SendComment',data).then((res)=>{
+        console.log(res.data.response)
+        if(res.data.response===true){
+          ElNotification({
+            title: '评论发表成功',
+            message: h('i', { style: 'color: teal' }, '评论发表成功'),
+          })
+        }
+        else{
+          ElNotification({
+            title: '评论发表失败',
+            message: h('i', { style: 'color: teal' }, '评论发表失败'),
+          })
+        }
+      })
     },
     submit(){
       console.log("提交评价")
@@ -58,16 +81,29 @@ export default {
         message: h('i', { style: 'color: teal' }, '评价已提交'),
       })
     },
-    back(){
-      this.$router.push({ name: 'home'})
-    }
+    async fresh_comment() {
+      // console.log(this.comment_list[0]["CommentId"])
+      let data = {
+        "belong_movie_id": this.movie_id,
+      }
+      await axios.post('http://localhost:8087/user/SelectComment', data).then((res) => {
+        console.log(this.comment_list)
+        this.comment_list.push(res.data.content[0])
+        console.log(this.comment_list)
+      })
+    },
   },
   created(){
     this.title=this.$route.query.title
+    this.movie_id=this.$route.query.movie_id
+    // this.fresh_comment()
   }
 };
 import { h } from 'vue'
 import { ElNotification } from 'element-plus'
+import {UComment} from "undraw-ui";
+import CommentItem from "@/components/CommentItem.vue";
+
 
 const open1 = () => {
   ElNotification({
@@ -136,7 +172,9 @@ const open2 = () => {
   min-width: 65%;
 }
 .rating{
- height: 90px;
+  display: flex;
+  justify-content: left;
+  height: 90px;
   margin-left: 20px;
   width: 100%;
 }
@@ -144,6 +182,7 @@ const open2 = () => {
 .comment_place{
   display: flex;
   width: 90%;
+  flex-wrap: wrap;
   //background-color: green;
   margin: 20px auto;
 }
@@ -162,5 +201,13 @@ const open2 = () => {
 #submit-comment-button{
   margin-top: 40%;
   margin-left:50%;
+}
+.write-comment{
+  display: flex;
+  width: 100%;
+}
+.box{
+  display: flex;
+  height: 100%;
 }
 </style>

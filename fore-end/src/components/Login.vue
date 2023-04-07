@@ -1,5 +1,5 @@
 <template>
-  <MyTitle></MyTitle>
+<!--  <MyTitle></MyTitle>-->
   <div class="back-draw">
     <div class="Login">
       <div class="title">
@@ -42,7 +42,6 @@ export default {
   },
   methods:{
     Login(){
-      console.log("???????")
       let data={
         "password":this.password,
         "email":this.email,
@@ -50,11 +49,12 @@ export default {
       axios.post('http://localhost:8087/user/Login',data).then((res)=>{
         let ret=res.data.response
         if(ret===true){
+          localStorage.setItem("8080:userInfo",res.data.token)
+          router.push({name:"home"})
           ElNotification({
             title: '登录成功',
             message: h('i', { style: 'color: teal' }, 'enjoy'),
           })
-          router.push({name:"home"})
         }
         else{
           ElNotification({

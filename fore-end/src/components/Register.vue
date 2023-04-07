@@ -1,5 +1,5 @@
 <template>
-  <MyTitle></MyTitle>
+<!--  <MyTitle></MyTitle>-->
   <div class="back-draw">
     <div class="form">
       <div class="form-item">

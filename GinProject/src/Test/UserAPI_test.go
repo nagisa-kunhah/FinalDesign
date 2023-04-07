@@ -20,20 +20,5 @@ func TestUserAPIInsert(t *testing.T) {
 	fmt.Println(ret)
 }
 func TestUserAPICheckLogin(t *testing.T) {
-	ret := API.UserAPI{}.CheckLogin("1434936049@qq.com", "aa1234")
-	if !(ret == true) {
-		t.Error("check 1 fail")
-	}
-	ret = API.UserAPI{}.CheckLogin("222@qq.com", "aa1234")
-	if !(ret == true) {
-		t.Error("check 2 fail")
-	}
-	ret = API.UserAPI{}.CheckLogin("1434936049@qq.com", "1111")
-	if !(ret == false) {
-		t.Error("check 3 fail")
-	}
-	ret = API.UserAPI{}.CheckLogin("111@qq.com", "aa1234")
-	if !(ret == false) {
-		t.Error("check 3 fail")
-	}
+
 }

@@ -1,5 +1,5 @@
 <template>
-  <MyHead></MyHead>
+<!--  <MyHead></MyHead>-->
   <div id="p1">
     <div id="my-swipper">
       <swiper
@@ -114,7 +114,7 @@ export default {
     img_jump(id){
       console.log(id)
       // console.log("aaaaaa")
-      this.$router.push({ name: 'VideoRating', query: { movieId:id,title:this.titles[id] } })
+      this.$router.push({ name: 'VideoRating', query: { movie_id:id,title:this.titles[id] } })
     },
     mouseenter:function (index){
       this.top_value[index]='20%'
