@@ -1,9 +1,10 @@
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, mapped_column, Mapped
 import pymysql
 import pandas as pd
+
 DB_URI = 'mysql+pymysql://{username}:{pwd}@{host}:{port}/{db}?charset=utf8' \
     .format(username="root", pwd="root", host="127.0.0.1", port="3306", db="test")
 Base = declarative_base()
@@ -14,9 +15,13 @@ session_factor = sessionmaker(bind=engine)
 class Movie(Base):
     __tablename__ = 'Movies'
 
-    movieId = Column(String(16), primary_key=True)
-    title = Column(String(256))
-    genres = Column(String(128))
+    movieId: Mapped[int] = mapped_column(primary_key=True)
+    title: Mapped[str]
+    genres: Mapped[str]
+
+    # movieId = Column(String(16), primary_key=True)
+    # title = Column(String(256))
+    # genres = Column(String(128))
 
     def __init__(self, movie_id, title, genres):
         self.movieId = movie_id
