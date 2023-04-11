@@ -19,5 +19,6 @@ from djangoProject import view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('fresh/', view.fresh_recommend)
+    path('fresh/', view.fresh_recommend),
+    path('online_update/', view.online_update)
 ]
