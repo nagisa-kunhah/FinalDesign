@@ -2,7 +2,7 @@
   <div class="common-layout">
     <div class="aside">aside</div>
     <div class="right">
-      <div class="title"><h4>{{info.CommentId}}</h4></div>
+      <div class="title"><h4>{{nickname}}</h4></div>
       <div class="comment">{{info.Comment}}</div>
       <div class="info">{{info.CommitTime}}</div>
     </div>
@@ -12,7 +12,8 @@
 <script>
 export default {
   props:{
-    info:null
+    info:null,
+    nickname:null,
   },
   name: "CommentItem"
 }
