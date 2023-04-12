@@ -1,5 +1,5 @@
 <template>
-<!--  <MyTitle></MyTitle>-->
+  <MyTitle></MyTitle>
   <div class="back-draw">
     <div class="Login">
       <div class="title">
@@ -29,7 +29,6 @@ import MyTitle from "@/components/MyHead.vue";
 import axios from "axios";
 import {ElNotification} from "element-plus";
 import {h} from "vue";
-import router from "@/router";
 
 export default {
   name: "Login",
@@ -50,11 +49,19 @@ export default {
         let ret=res.data.response
         if(ret===true){
           localStorage.setItem("8080:userInfo",res.data.token)
-          router.push({name:"home"})
           ElNotification({
             title: '登录成功',
             message: h('i', { style: 'color: teal' }, 'enjoy'),
           })
+          this.$root.set_login()
+          this.$router.push({path:'/'})
+          console.log('ok go')
+          // this.$router.push({name:'LoginSuccess'})
+          // setTimeout(function (){
+          //
+          //   // this.$router.go(0)
+          //   // this.$router.push({path:'home'})
+          // },1000)
         }
         else{
           ElNotification({
@@ -64,7 +71,9 @@ export default {
         }
       })
     }
-  }
+  },
+  setup(){
+  },
 }
 </script>
 
