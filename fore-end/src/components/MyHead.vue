@@ -11,7 +11,7 @@ import Navi from "@/components/Navi.vue";
 
 export default {
   name: "MyTitle",
-  components: {Navi}
+  components: {Navi},
 }
 </script>
 
