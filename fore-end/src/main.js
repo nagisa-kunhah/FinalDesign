@@ -13,5 +13,4 @@ app.use(router)
 
 app.config.globalProperties.$cookie=VueCookie
 app.config.globalProperties.$axios = axios
-axios.defaults.baseURL = '/api'
 app.mount('#app')
