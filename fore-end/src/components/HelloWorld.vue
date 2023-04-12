@@ -1,5 +1,5 @@
 <template>
-<!--  <MyHead></MyHead>-->
+  <MyHead></MyHead>
   <div id="p1">
     <div id="my-swipper">
       <swiper
@@ -9,11 +9,11 @@
           :centered-slides="true"
           :navigation="true"
           :pagination="{
-            clickable: true
+// <!--            clickable: true-->
            }"
           :autoplay="{
-      delay: 2500,
-      disableOnInteraction: false
+// <!--      delay: 2500,-->
+// <!--      disableOnInteraction: false-->
       }">
         <swiper-slide class="slide">
           <div class="swiper-img">{{slide_recommend[0]}}</div>
@@ -80,6 +80,7 @@ import MyHead from "@/components/MyHead.vue";
 import axios from "axios";
 export default {
   name: "HelloWorld",
+  inject:['user_id','login'],
   data(){
     return{
       top_value:new Array(6).fill('70%'),
@@ -93,6 +94,12 @@ export default {
   watch:{
     imgs(){
       this.fresh_recommend()
+    },
+    'user_id':{
+      "deep":true,
+      handler(){
+        this.fresh_recommend()
+      }
     }
   },
   computed:{
@@ -107,13 +114,14 @@ export default {
     Swiper,
     SwiperSlide,
   },
-  created() {
-    this.fresh_recommend()
-  },
   methods:{
+    btn(){
+      console.log(this.$root.user_id)
+    },
+    to_center(){
+      this.$router.push({name:"UserCenter"})
+    },
     img_jump(id){
-      console.log(id)
-      // console.log("aaaaaa")
       this.$router.push({ name: 'VideoRating', query: { movie_id:this.movie_id[id],title:this.titles[id] } })
     },
     mouseenter:function (index){
@@ -123,14 +131,15 @@ export default {
       this.top_value[index]='70%'
     },
     fresh_recommend(){
+      console.log('?????? root.user_id',this.$root.user_id)
       let data={
-        id:1
+        "id":this.$root.user_id,
       }
+      console.log('fresh_recommend data:',data)
       axios.post("http://localhost:8087/user/get_recommend",data).then((res)=>{
         let recommends=res.data.recommend
         this.movie_id=[]
         this.titles=[]
-        console.log("recommend:",res.data)
         for(let i=0;i<recommends.length;i++){
           this.movie_id.push(recommends[i])
           let file_name='@/assets/photo/'+recommends[i]+'.jpg'
@@ -138,7 +147,6 @@ export default {
             let required=require(file_name)
             this.imgs.push(required)
           }catch (e){
-            console.log("error!")
             this.imgs.push(this.default_img)
           }
         }
@@ -146,7 +154,6 @@ export default {
         for(let i=0;i<recommend_title.length;i++){
           this.titles.push(recommend_title[i])
         }
-        console.log(this.titles)
       })
     },
   },
@@ -162,6 +169,10 @@ export default {
       onSlideChange,
       modules: [Pagination],
     };
+    // this.fresh_recommend()
+  },
+  created() {
+    this.fresh_recommend()
   }
 }
 </script>
