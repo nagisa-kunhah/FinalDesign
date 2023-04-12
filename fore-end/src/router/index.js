@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 import HelloWorld from '@/components/HelloWorld.vue'
 import VideoRating from '@/components/VideoRating.vue'
 import VideoPlay from '@/components/VideoPlay.vue'
@@ -7,7 +6,8 @@ import Register from '@/components/Register.vue'
 import Login from "@/components/Login.vue";
 import CommentItem from "@/components/CommentItem.vue";
 import Test from "@/components/Test.vue";
-
+import UserCenter from "@/components/UserCenter.vue";
+import LoginSuccess from "@/components/LoginSuccess.vue";
 
 const routes = [
   {
@@ -52,6 +52,16 @@ const routes = [
     path: '/test',
     name: 'test',
     component: Test,
+  },
+  {
+    path: '/UserCenter',
+    name: 'UserCenter',
+    component:UserCenter,
+  },
+  {
+    path:'/LoginSuccess',
+    name:'LoginSuccess',
+    component: LoginSuccess
   }
 ]
 
@@ -59,5 +69,30 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
 })
+
+// router.beforeEach(async (to, from) => {
+//   return true
+//   if (to.fullPath === '/UserCenter') {
+//     return true
+//     let token=localStorage.getItem("8080:userInfo")
+//     let flag
+//     console.log(token)
+//     if(token===undefined){
+//       return false
+//     }
+//     let data={
+//       "token":token
+//     }
+//     console.log("to post...")
+//     await axios.post('http://localhost:8087/user/JustCheckLogin',data).then((res) => {
+//       console.log('to process post')
+//       flag = res.data.response
+//     })
+//     console.log('to ret,flag:',flag)
+//     return flag
+//   } else {
+//     return true
+//   }
+// })
 
 export default router
